@@ -4,9 +4,11 @@ import com.devsuperior.dscatalog.dto.CategoryDTO;
 import com.devsuperior.dscatalog.entities.Category;
 import com.devsuperior.dscatalog.repositories.CategoryRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -46,11 +48,13 @@ public class CategoryService {
             return new CategoryDTO(categoryRepository.save(entity));
         } catch (EntityNotFoundException entityNotFoundException) {
             throw new ResourceNotFoundException("Id not found: " + id);
+        }catch(DataIntegrityViolationException dataIntegrityViolationException){
+            throw  new RuntimeException();
         }
     }
 
     @Transactional(readOnly = true)
-    public Page<CategoryDTO> findAllPaged(PageRequest pageRequest) {
-        return categoryRepository.findAll(pageRequest).map(CategoryDTO::new);
+    public Page<CategoryDTO> findAllPaged(Pageable pageable) {
+        return categoryRepository.findAll(pageable).map(CategoryDTO::new);
     }
 }

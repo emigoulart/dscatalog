@@ -30,7 +30,7 @@ public class CategoryController {
         categoryDTO = categoryService.insert(categoryDTO);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri().path("/{id}")
                 .buildAndExpand(categoryDTO.getId()).toUri();
-        return ResponseEntity.ok().body(categoryDTO);
+        return ResponseEntity.created(uri).body(categoryDTO);
     }
 
     @PutMapping(value = "/{id}")

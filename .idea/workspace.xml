@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65dd8d89-c732-4449-bf3d-a0809457c9d6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog/controllers/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog/dto/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog/entities/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog/exceptions/DatabaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog/exceptions/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog/repositories/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog/services/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/devsuperior/dscatalog/repositories/ProductRepositoryTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog/controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog/controllers/CategoryController.java" afterDir="false" />
     </list>
@@ -15,18 +23,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
@@ -42,17 +69,67 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bds02" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog/controllers" />
+      <recent name="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog/exceptions" />
+      <recent name="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog/dto" />
       <recent name="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog/services" />
-      <recent name="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog" />
+      <recent name="$PROJECT_DIR$/backend/src/main/java/com/devsuperior/dscatalog/entities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.devsuperior.dscatalog.repositories" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.devsuperior.dscatalog.repositories" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ProductRepositoryTests.deleteShouldObjectWhenIdExist">
+    <configuration name="ProductRepositoryTests.deleteShouldObjectWhenIdExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dscatalog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devsuperior.dscatalog.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devsuperior.dscatalog.repositories" />
+      <option name="MAIN_CLASS_NAME" value="com.devsuperior.dscatalog.repositories.ProductRepositoryTests" />
+      <option name="METHOD_NAME" value="deleteShouldObjectWhenIdExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTests.insertShouldSaveProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dscatalog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devsuperior.dscatalog.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devsuperior.dscatalog.repositories" />
+      <option name="MAIN_CLASS_NAME" value="com.devsuperior.dscatalog.repositories.ProductRepositoryTests" />
+      <option name="METHOD_NAME" value="insertShouldSaveProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProductRepositoryTests.deleteShouldObjectWhenIdExist" />
+        <item itemvalue="JUnit.ProductRepositoryTests.insertShouldSaveProduct" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
